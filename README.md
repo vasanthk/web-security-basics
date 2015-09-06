@@ -49,6 +49,36 @@ Next, we’re going to look into a very basic outline of the process of establis
 
 * Browser decrypts the data and displays page
 
+#### Advantages of Implementing HTTPS
+
+* Trust – If you get an EV certificate that shows the green address bar in the browser, you’re going to be giving your visitors a sense of trust. And when they know you’re taking their security seriously, they’re going to be appreciative.
+
+* Verification – One of the best things about installing an SSL certificate on your server is that it guarantees your visitors you really are who you say you are. This is important when trying to do business online.
+
+* Integrity of Data – Additionally, with SSL, you can guarantee integrity of data. For example, without SSL, it’s possible to not only intercept data going to and from the web server, but to change it as well!
+
+* Google and SEO – Last but not least, you have to take into consideration the recent announcements by Google that they’re going to be using whether or not a server uses SSL as a ranking signal.
+
+#### Disadvantages of SSL
+
+* Cost of Certificate – It is possible to get a free SSL certificate, but this isn’t recommended for a lot of reasons. Depending on the type of cert you buy, the price will vary quite a bit. However, when you consider the added level of security, the cost isn’t really prohibitive for most websites.
+
+* Mixed Modes – If your SSL implementation isn’t setup correctly and you still have some files being served via HTTP rather than HTTPS, visitors are going to get a warning message in their browser letting them know some of the data isn’t protected. This can be confusing to some website visitors.
+
+* Proxy Caching – Another possible problem is if you have a complex proxy caching system setup on your web server. Encrypted content isn’t going to be able to be cached. To get around this, you need to add a server to handle the encryption before it gets to the caching server. This will require additional costs, but it’s a good way to make sure you’re encrypting your visitors’ data when they’re accessing your website.
+
+* Mobile – When SSL was first implemented, it was meant for web based applications. While the ability to go beyond HTTPS has come a long way in the last few years, it can sometimes be a pain to setup and might require changes to in-house software or buying additional modules from application vendors. Still, for everything that is on the web or accessible via a web browser, SSL / TLS is definitely the way to go.
+
+#### Myths About SSL / TLS
+
+* Resource Hog – When setup correctly, SSL is not going to eat up all your server resources. While this may have been true ten years ago or more, this isn’t the case these days on most modern servers.
+
+* Latencies – Another problem people worry about needlessly is that setting up SSL on their server will cause all of their web pages to load slower in browsers when people view them. Just like the last point, this just isn’t the case.
+
+* Cache Problems – In the past SSL could cause problems if you had a system of caching setup on your web server, but this isn’t the case for most servers these days. That said, Internet Explorer 6 may still have problems.
+
+* Scary Warning Messages – Another thing that’s not really a problem is the myth that installing an SSL certificate will lead to a lot of scary error and warning messages. This is only true if you don’t set it up correctly, and it’s really not that difficult to be honest. 
+
 #### How to crack SSL
 
 There is no simple and straight-forward way; SSL is secure when done correctly. An attacker can try **if the user ignores certificate warnings** though, which would break the security instantly. When a user does this, the attacker doesn't need a private key from a CA to forge a certificate, he merely has to send a certificate of his own.
@@ -61,8 +91,6 @@ Another trick for HTTP is when the login page is not secured, and it submits to 
 
 Last but not least, you can resort to other methods to obtain the info that SSL denies you to obtain. If you can already see and tamper with the user's connection, it might not be that hard to replace one of his/her .exe downloads with a keylogger, or simply to physically attack that person. 
 Cryptography may be rather secure, but humans and human error is still a weak factor.
-
-
 
 ### Reference:
 
