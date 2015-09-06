@@ -12,6 +12,8 @@ When using SSL/TLS correctly, all an attacker can see on the cable is which IP a
 
 In typical use, the attacker will also be able to figure out which host name you're connecting to (but not the rest of the URL): although HTTPS itself does not expose the host name, your browser will usually need to make a DNS request first to find out what IP address to send the request to.
 
+TLS is based on specifications developed by Netscape Communications’ SSL protocol, which is the predecessor of TLS. TLS and SSL are not interoperable, i.e. TLS cannot be implemented as SSL.
+
 #### High-level description of the protocol
 
 After building a TCP connection, the **SSL handshake** is started by the client. The client sends a number of specifications: which version of SSL/TLS it is running, what ciphersuites it wants to use, and what compression methods it wants to use. 
@@ -28,6 +30,24 @@ The **handshake is now finished**, and the two hosts can communicate securely.
 
 **To close the connection, a close_notify 'alert' is used**. If an attacker tries to terminate the connection by finishing the TCP connection (injecting a FIN packet), both sides will know the connection was improperly terminated. 
 The connection cannot be compromised by this though, merely interrupted.
+
+#### An SSL Connection
+
+Next, we’re going to look into a very basic outline of the process of establishing an SSL connection.
+
+* Browser requests a HTTPS webpage
+
+* Web Server sends public key and certificate
+
+* Browser examines the SSL Certificate
+
+* Browser creates a symmetric key and sends it to server
+
+* Web server decrypts symmetric key with its private key
+
+* Web server sends browser the page with symmetric key
+
+* Browser decrypts the data and displays page
 
 #### How to crack SSL
 
