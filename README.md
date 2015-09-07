@@ -99,4 +99,9 @@ Cryptography may be rather secure, but humans and human error is still a weak fa
 [Diffie Helman Exchange](https://www.youtube.com/watch?v=YEBfamv-_do)
 
 
+### CORS (Cross-Origin Resource Sharing)
+
+CORS, is an HTML5 feature that allows one site to access another site’s resources despite being under different domain names. Let me explain that a little more. Prior to CORS, a web browser security restriction, known as the Same-Origin Policy, would prevent my web application from calling an external API. The browser would consider two resources to be of the same-origin only if they used the same protocol (http vs. https), the same port, and the same domain (even different subdomains would fail).
+
+
 
