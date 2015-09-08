@@ -107,7 +107,11 @@ Before CORS, you could get around this security restriction by creating some sor
 
 With CORS, my web app on one domain can freely communicate with your API on another domain, even using the methods POST, PUT, and DELETE, provided that your API’s security restrictions specify that this is allowed and that you have established the communication through the CORS specification as well. This means that you can eliminate the need for a server-side component and do all the API communication on the client-side using JavaScript.
 
+For more complex requests, the browser will "preflight" the request by sending an OPTIONS request to the server first. This request is basically there to ask the server if the full request is permissable. Note that while this requires extra setup on the server side, the browser will do this automatically depending on the characteristics of the request.
 
+### Reference:
+
+[Using CORS](http://www.html5rocks.com/en/tutorials/cors/)
 
 
 
