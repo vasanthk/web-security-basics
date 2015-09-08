@@ -103,5 +103,11 @@ Cryptography may be rather secure, but humans and human error is still a weak fa
 
 CORS, is an HTML5 feature that allows one site to access another site’s resources despite being under different domain names. Let me explain that a little more. Prior to CORS, a web browser security restriction, known as the Same-Origin Policy, would prevent my web application from calling an external API. The browser would consider two resources to be of the same-origin only if they used the same protocol (http vs. https), the same port, and the same domain (even different subdomains would fail).
 
+Before CORS, you could get around this security restriction by creating some sort of server-side component to shuttle API requests, which was often unduly complicated and unnecessary. You could also use JSONP (JSON with padding) in APIs that supported it but many did not, and, even if they did, JSONP is limited to GET requests only.
+
+With CORS, my web app on one domain can freely communicate with your API on another domain, even using the methods POST, PUT, and DELETE, provided that your API’s security restrictions specify that this is allowed and that you have established the communication through the CORS specification as well. This means that you can eliminate the need for a server-side component and do all the API communication on the client-side using JavaScript.
+
+
+
 
 
