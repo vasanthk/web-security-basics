@@ -1,5 +1,11 @@
 # Web Security Basics
 
+**Table of Contents**
+
+- [SSL/TLS](#ssltls)
+- [CORS (Cross-Origin Resource Sharing)](#cors-cross-origin-resource-sharing)
+- [Cross-site Scripting attack](#cross-site-scripting-attack)
+
 ### SSL/TLS
 
 #### General
