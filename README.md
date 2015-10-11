@@ -49,6 +49,8 @@ Next, we’re going to look into a very basic outline of the process of establis
 
 * Browser decrypts the data and displays page
 
+![SSL-TLS](https://cdn.rawgit.com/vasanthk/web-security-basics/master/SSL-TLS.jpg)
+
 #### Advantages of Implementing HTTPS
 
 * Trust – If you get an EV certificate that shows the green address bar in the browser, you’re going to be giving your visitors a sense of trust. And when they know you’re taking their security seriously, they’re going to be appreciative.
