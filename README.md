@@ -1,5 +1,7 @@
 # Web Security Basics
 
+This is a quick review of basic web security concepts. Contributions are always welcome :)
+
 **Table of Contents**
 
 - [SSL/TLS](#ssltls)
