@@ -135,5 +135,11 @@ While XSS can be taken advantage of within VBScript, ActiveX and Flash (although
 
 [Cross-site Scripting (XSS) Attack](http://www.acunetix.com/websitesecurity/cross-site-scripting/)
 
+### CSRF
+
+### Reference
+
+[Understanding CSRF](https://github.com/pillarjs/understanding-csrf)
+
 
 
