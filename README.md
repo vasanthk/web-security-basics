@@ -184,11 +184,15 @@ A hacker cannot use the refresh token to create a new access token because the c
 
 [10 Things You Should Know about Tokens](https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/)
 
-**OAuth and Access tokens**
+**OAuth**
 
-[An introduction to oAuth2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
+[An introduction to OAuth2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
 
 [Dancing with OAuth: Understanding how Authorization Works](http://www.cubrid.org/blog/dev-platform/dancing-with-oauth-understanding-how-authorization-works/)
+
+[Understanding OAuth2](http://www.bubblecode.net/en/2016/01/22/understanding-oauth2/)
+
+**Access Token**
 
 [Why do access tokens expire?](http://stackoverflow.com/questions/7030694/why-do-access-tokens-expire)
 
