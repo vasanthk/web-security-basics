@@ -7,7 +7,7 @@ This is a quick review of basic web security concepts. Contributions are always 
 - [SSL/TLS](#ssltls)
 - [CORS (Cross-Origin Resource Sharing)](#cors-cross-origin-resource-sharing)
 - [Cross-site Scripting attack](#cross-site-scripting-attack)
-- [Auth and Refresh Tokens](#auth-and-refresh-tokens)
+- [Access and Refresh Tokens](#access-and-refresh-tokens)
 
 ### SSL/TLS
 
@@ -142,7 +142,7 @@ While XSS can be taken advantage of within VBScript, ActiveX and Flash (although
 
 [Understanding CSRF](https://github.com/pillarjs/understanding-csrf)
 
-### Auth and Refresh Tokens
+### Access and Refresh Tokens
 
 Since the HTTP protocol is stateless, this means that if we authenticate a user with a username and password, then on the next request, our application won’t know who we are. We would have to authenticate again.
 
@@ -177,6 +177,14 @@ A hacker cannot use the refresh token to create a new access token because the c
 [Stackoverflow: What is token based authentication?](http://stackoverflow.com/a/27119226/1672655)
 
 [10 Things You Should Know about Tokens](https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/)
+
+**OAuth and Access tokens**
+
+[An introduction to oAuth2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
+
+[Dancing with OAuth: Understanding how Authorization Works](http://www.cubrid.org/blog/dev-platform/dancing-with-oauth-understanding-how-authorization-works/)
+
+[Why do access tokens expire?](http://stackoverflow.com/questions/7030694/why-do-access-tokens-expire)
 
 
 
