@@ -148,13 +148,13 @@ Since the HTTP protocol is stateless, this means that if we authenticate a user 
 
 OAuth (Open Authorization) is the open standard for token-based authentication and authorization on the Internet.
 
-Consumer key is essentially the API key associated with the application (Twitter, Facebook, etc.). This key (or 'client ID', as Facebook calls it) is what identifies the client. By the way, a client is a website/service that is trying to access an end-user's resources.
+**Consumer key** is essentially the API key associated with the application (Twitter, Facebook, etc.). This key (or 'client ID', as Facebook calls it) is what identifies the client. By the way, a client is a website/service that is trying to access an end-user's resources.
 
-Consumer secret is the client password that is used to authenticate with the authentication server, which is a Twitter/Facebook/etc. server that authenticates the client.
+**Consumer secret** is the client password that is used to authenticate with the authentication server, which is a Twitter/Facebook/etc. server that authenticates the client.
 
-Access token is what is issued to the client once the client successfully authenticates itself (using the consumer key & secret). This access token defines the privileges of the client (what data the client can and cannot access). Now every time the client wants to access the end-user's data, the access token secret is sent with the access token as a password (similar to the consumer secret).
+**Access toke**n is what is issued to the client once the client successfully authenticates itself (using the consumer key & secret). This access token defines the privileges of the client (what data the client can and cannot access). Now every time the client wants to access the end-user's data, the access token secret is sent with the access token as a password (similar to the consumer secret).
 
-A Refresh token is a special kind of JWT that is used to authenticate a user without them needing to re-authenticate.
+**Refresh token** is a special kind of JWT that is used to authenticate a user without them needing to re-authenticate.
 
 The main advantage of a refresh token is that it is easier to detect if it is compromised.
 
@@ -169,8 +169,7 @@ In scenario 1, if the auth token is compromised it would be hard for anyone to d
 In scenario 2, if only the auth token is compromised (refresh token is not compromised too), it could only continue until the token expires.
 
 In scenario 2, if the refresh token is compromised, once the refresh token is invoked, all other auth tokens that were generated using that refresh token are invalidated, so only 1 party can use the api (per refresh token) at a time.
-This results in multiple users repeatedly invalidating each other's auth tokens by generating new ones. The api could detect the breach because refreshes are being made prior to the auth token expiration, and would know to immediately revoke the refresh token.
-A hacker cannot use the refresh token to create a new access token because the client ID and client secret are needed along with the refresh token in order to generate the new access token.
+This results in multiple users repeatedly invalidating each other's auth tokens by generating new ones. The api could detect the breach because refreshes are being made prior to the auth token expiration, and would know to immediately revoke the refresh token. A hacker cannot use the refresh token to create a new access token because the client ID and client secret are needed along with the refresh token in order to generate the new access token.
 
 ### Reference
 
