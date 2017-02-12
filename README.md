@@ -148,6 +148,12 @@ Since the HTTP protocol is stateless, this means that if we authenticate a user 
 
 The Access Token is a credential that can be used by a client to access an API. The access_token should be used as a Bearer credential and transmitted in an HTTP Authorization header to the API.
 
+Consumer key is essentially the API key associated with the application (Twitter, Facebook, etc.). This key (or 'client ID', as Facebook calls it) is what identifies the client. By the way, a client is a website/service that is trying to access an end-user's resources.
+
+Consumer secret is the client password that is used to authenticate with the authentication server, which is a Twitter/Facebook/etc. server that authenticates the client.
+
+Access token is what is issued to the client once the client successfully authenticates itself (using the consumer key & secret). This access token defines the privileges of the client (what data the client can and cannot access). Now every time the client wants to access the end-user's data, the access token secret is sent with the access token as a password (similar to the consumer secret).
+
 A Refresh token is a special kind of JWT that is used to authenticate a user without them needing to re-authenticate.
 
 The main advantage of a refresh token is that it is easier to detect if it is compromised.
