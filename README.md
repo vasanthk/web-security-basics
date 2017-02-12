@@ -186,6 +186,8 @@ A hacker cannot use the refresh token to create a new access token because the c
 
 [Why do access tokens expire?](http://stackoverflow.com/questions/7030694/why-do-access-tokens-expire)
 
+[Why use an authentication token instead of the username/password per request?](http://security.stackexchange.com/questions/63435/why-use-an-authentication-token-instead-of-the-username-password-per-request)
+
 **Refresh Token**
 
 [Why Does OAuth v2 Have Both Access and Refresh Tokens?](http://stackoverflow.com/questions/3487991/why-does-oauth-v2-have-both-access-and-refresh-tokens)
