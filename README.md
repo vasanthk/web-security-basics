@@ -146,7 +146,7 @@ While XSS can be taken advantage of within VBScript, ActiveX and Flash (although
 
 Since the HTTP protocol is stateless, this means that if we authenticate a user with a username and password, then on the next request, our application won’t know who we are. We would have to authenticate again.
 
-The Access Token is a credential that can be used by a client to access an API. The access_token should be used as a Bearer credential and transmitted in an HTTP Authorization header to the API.
+OAuth (Open Authorization) is the open standard for token-based authentication and authorization on the Internet.
 
 Consumer key is essentially the API key associated with the application (Twitter, Facebook, etc.). This key (or 'client ID', as Facebook calls it) is what identifies the client. By the way, a client is a website/service that is trying to access an end-user's resources.
 
