@@ -7,6 +7,7 @@ This is a quick review of basic web security concepts. Contributions are always 
 - [SSL/TLS](#ssltls)
 - [CORS (Cross-Origin Resource Sharing)](#cors-cross-origin-resource-sharing)
 - [Cross-site Scripting attack](#cross-site-scripting-attack)
+- [Auth and Refresh Tokens](#auth-and-refresh-tokens)
 
 ### SSL/TLS
 
@@ -140,6 +141,43 @@ While XSS can be taken advantage of within VBScript, ActiveX and Flash (although
 ### Reference
 
 [Understanding CSRF](https://github.com/pillarjs/understanding-csrf)
+
+### Auth and Refresh Tokens
+
+Since the HTTP protocol is stateless, this means that if we authenticate a user with a username and password, then on the next request, our application won’t know who we are. We would have to authenticate again.
+
+
+
+A refresh token is a special kind of JWT that is used to authenticate a user without them needing to re-authenticate.
+
+The main advantage of a refresh token is that it is easier to detect if it is compromised.
+
+Consider these two scenarios:
+
+1. A single long-lasting auth token is used.
+
+2. A short duration auth token is used, and a long-lasting refresh token periodically requests a new auth token once the previous one has expired.
+
+In scenario 1, if the auth token is compromised it would be hard for anyone to detect this, and the unauthorized access could continue indefinitely.
+
+In scenario 2, if only the auth token is compromised (refresh token is not compromised too), it could only continue until the token expires.
+
+In scenario 2, if the refresh token is compromised, once the refresh token is invoked, all other auth tokens that were generated using that refresh token are invalidated, so only 1 party can use the api (per refresh token) at a time.
+This results in multiple users repeatedly invalidating each other's auth tokens by generating new ones. The api could detect the breach because refreshes are being made prior to the auth token expiration, and would know to immediately revoke the refresh token.
+A hacker cannot use the refresh token to create a new access token because the client ID and client secret are needed along with the refresh token in order to generate the new access token.
+
+### Reference
+
+**Tokens**
+
+[The Ins and Outs of Token Based Authentication](https://scotch.io/tutorials/the-ins-and-outs-of-token-based-authentication)
+
+[The Anatomy of a JSON Web Token](https://scotch.io/tutorials/the-anatomy-of-a-json-web-token)
+
+[Stackoverflow: What is token based authentication?](http://stackoverflow.com/a/27119226/1672655)
+
+[10 Things You Should Know about Tokens](https://auth0.com/blog/ten-things-you-should-know-about-tokens-and-cookies/)
+
 
 
 
