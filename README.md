@@ -207,7 +207,7 @@ This results in multiple users repeatedly invalidating each other's auth tokens 
 
 [How secure are expiring tokens and refresh tokens?](http://security.stackexchange.com/questions/87119/how-secure-are-expiring-tokens-and-refresh-tokens)
 
-**Other Links
+**Other Links**
 
 [What should every programmer know about security?](http://stackoverflow.com/questions/2794016/what-should-every-programmer-know-about-security)
 
