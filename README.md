@@ -142,6 +142,8 @@ While XSS can be taken advantage of within VBScript, ActiveX and Flash (although
 
 [Understanding CSRF](https://github.com/pillarjs/understanding-csrf)
 
+[CSRF Demystified](http://www.gnucitizen.org/blog/csrf-demystified/)
+
 ### Access and Refresh Tokens
 
 Since the HTTP protocol is stateless, this means that if we authenticate a user with a username and password, then on the next request, our application won’t know who we are. We would have to authenticate again.
