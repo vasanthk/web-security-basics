@@ -7,6 +7,7 @@ This is a quick review of basic web security concepts. Contributions are always 
 - [SSL/TLS](#ssltls)
 - [CORS (Cross-Origin Resource Sharing)](#cors-cross-origin-resource-sharing)
 - [Cross-site Scripting attack](#cross-site-scripting-attack)
+- [CSRF (Cross-Site Request Forgery)](#csrf-cross-site-request-forgery)
 - [Access and Refresh Tokens](#access-and-refresh-tokens)
 
 ### SSL/TLS
