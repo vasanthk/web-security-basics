@@ -136,7 +136,7 @@ While XSS can be taken advantage of within VBScript, ActiveX and Flash (although
 
 [Cross-site Scripting (XSS) Attack](http://www.acunetix.com/websitesecurity/cross-site-scripting/)
 
-### Cross-Site Request Forgery (CSRF)
+### CSRF (Cross-Site Request Forgery)
 
 ### Reference
 
