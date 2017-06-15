@@ -149,6 +149,8 @@ While XSS can be taken advantage of within VBScript, ActiveX and Flash (although
 
 [CSRF Attacks](https://www.acunetix.com/websitesecurity/csrf-attacks/)
 
+[How would you explain CSRF token to a newbie?](https://security.stackexchange.com/questions/154762/how-would-you-explain-csrf-token-to-a-newbie-how-is-it-safer-than-cookie-based)
+
 ### Access and Refresh Tokens
 
 Since the HTTP protocol is stateless, this means that if we authenticate a user with a username and password, then on the next request, our application won’t know who we are. We would have to authenticate again.
